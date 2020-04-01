@@ -23,6 +23,6 @@ class Character extends Model
 
     public function account()
     {
-        return $this->hasOne(Account::class, "memb___id","AccountID");
+        return $this->belongsTo(Account::class,"AccountID","memb___id");
     }
 }
